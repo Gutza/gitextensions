@@ -226,6 +226,9 @@
       <Component Id="CreateLocalBranches.dll" Guid="*">
         <File Source="..\Plugins\CreateLocalBranches\bin\Release\CreateLocalBranches.dll" />
       </Component>
+      <Component Id="CleanupCache.dll" Guid="*">
+        <File Source="..\Plugins\CleanupCache\bin\$(var.Configuration)\CleanupCache.dll" />
+      </Component>
       <Component Id="GitStatistics.dll" Guid="*">
         <File Source="..\Plugins\Statistics\GitStatistics\bin\Release\GitStatistics.dll" />
       </Component>
@@ -706,6 +709,9 @@
         </Feature>
         <Feature Id="CreateLocalBranches" Title="Create local branches" Level="1">
           <ComponentRef Id="CreateLocalBranches.dll" />
+        </Feature>
+        <Feature Id="CleanupCache" Title="Clean up the cache" Level="1">
+          <ComponentRef Id="CleanupCache.dll" />
         </Feature>
         <Feature Id="DeleteUnusedBranches" Title="Delete unused branches" Level="1">
           <ComponentRef Id="DeleteUnusedBranches.dll" />

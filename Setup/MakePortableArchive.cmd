@@ -81,6 +81,8 @@ xcopy /y ..\Plugins\BuildServerIntegration\TeamCityIntegration\bin\%Configuratio
 IF ERRORLEVEL 1 EXIT /B 1
 xcopy /y ..\Plugins\CreateLocalBranches\bin\%Configuration%\CreateLocalBranches.dll GitExtensions\Plugins\
 IF ERRORLEVEL 1 EXIT /B 1
+xcopy /y ..\Plugins\CleanupCache\bin\%Configuration%\CleanupCache.dll GitExtensions\Plugins\
+IF ERRORLEVEL 1 EXIT /B 1
 xcopy /y ..\Plugins\DeleteUnusedBranches\bin\%Configuration%\DeleteUnusedBranches.dll GitExtensions\Plugins\
 IF ERRORLEVEL 1 EXIT /B 1
 xcopy /y ..\Plugins\FindLargeFiles\bin\%Configuration%\FindLargeFiles.dll GitExtensions\Plugins\
@@ -242,6 +244,8 @@ IF ERRORLEVEL 1 EXIT /B 1
 xcopy /y ..\Plugins\BuildServerIntegration\TeamCityIntegration\bin\%Configuration%\TeamCityIntegration.pdb GitExtensions\Plugins\
 IF ERRORLEVEL 1 EXIT /B 1
 xcopy /y ..\Plugins\CreateLocalBranches\bin\%Configuration%\CreateLocalBranches.pdb GitExtensions\Plugins\
+IF ERRORLEVEL 1 EXIT /B 1
+xcopy /y ..\Plugins\CleanupCache\bin\%Configuration%\CleanupCache.pdb GitExtensions\Plugins\
 IF ERRORLEVEL 1 EXIT /B 1
 xcopy /y ..\Plugins\DeleteUnusedBranches\bin\%Configuration%\DeleteUnusedBranches.pdb GitExtensions\Plugins\
 IF ERRORLEVEL 1 EXIT /B 1
